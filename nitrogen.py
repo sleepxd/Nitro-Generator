@@ -1,18 +1,12 @@
-import random
-import string
-from colorama import init, Fore, Back, Style
-import colorama
+import random, string
+from colorama import init, Fore
+
 init(convert=True)
 
-f = open('nitro_codes.txt', 'a')
-print()
-print(Fore.CYAN + '# Codes: ')
+print('%sCodes:%s ' % (Fore.CYAN, Fore.WHITE), end='')
 amount = int(input())
-fix = 1
-while fix <= amount:
-    code = ('').join(random.choices(string.ascii_letters + string.digits, k=16))
-    discord_url = "https://discordapp.com/gifts/"
-    f.write(discord_url + code + '\n')
-    discord_code = discord_url + code
-    print(Fore.GREEN + discord_code)
-    fix += 1
+for i in range(amount):
+    code = "https://discordapp.com/gifts/%s" % (('').join(random.choices(string.ascii_letters + string.digits, k=16)))
+    print('Code: %s' % (code))
+    with open('codes.txt', 'a') as f:
+        f.write('%s\n' % (code))
