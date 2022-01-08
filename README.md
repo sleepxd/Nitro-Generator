@@ -10,4 +10,4 @@ i just used the raw choicer algorithm instead of `random.choice()` and added thr
 
 ---
 
-star/fork if u liked it! ❤
+star if u liked it! ❤
