@@ -1,4 +1,4 @@
-# <center>✨Nitro generator, but its ***improved***✨</center>
+# <p align="center">✨Nitro generator, but its ***improved***✨</p>
 
 ![benchmark with 10,00 code](benchmark/benchmark.png)
 
